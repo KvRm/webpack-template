@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    padding-right: 3rem;
     .company-info {
       display: inline-flex;
       flex-wrap: wrap;
@@ -70,10 +71,13 @@
         width: 100%;
         max-width: 52rem;
         height: 5rem;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         padding: .4rem 1rem;
         border: 1px solid #9A9A9A;
         border-radius: 5px 0 0 5px;
+        &:focus {
+          outline: none;
+        }
       }
       &-button {
         width: 5rem;
@@ -95,6 +99,7 @@
     &__link {
       height: 100%;
       margin-left: 2rem;
+      color: #202020;
     }
     &__item {
       display: flex;
