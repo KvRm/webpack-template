@@ -3,7 +3,7 @@
     .logo
       +svgImage('logo')
     .catalog
-      button.catalog-button
+      button.catalog-button(aria-expanded='false')
         +svgImage('catalog')
         span Каталог
     form.search(role='search')
@@ -22,4 +22,4 @@
       a.user-menu__link(href="#")
         .user-menu__item
           +svgImage('k')
-          span.title Корзина
+          span.title Корзина  
