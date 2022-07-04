@@ -1,3 +1,5 @@
 @use './global';
 @use './fonts';
-@import "bootstrap";
+
+@import './colors';
+@import './header.scss';

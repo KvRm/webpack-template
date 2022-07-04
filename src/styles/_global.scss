@@ -1,10 +1,23 @@
 html {
-   font-family: Kurale;
-   color: red;
+   font-size: 10px;
 }
 
-#app {
-   height: 300px;
-   display: block;
-   background: url("../images/3d-grid-png-image-20.png");
+body {
+   font-family: Mulish;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   color: 1a1a1a;
+   a {
+      text-decoration: none;
+   }
+   button {
+      border: none;
+   }
+}
+
+.container {
+   width: 100%;
+   max-width: 116rem;
+   margin: 0 auto;
 }

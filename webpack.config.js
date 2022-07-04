@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { postcss } = require('postcss-preset-env');
+const { web } = require('webpack');
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -10,6 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 console.log('mode:' + mode);
 
 module.exports = {
+   target: 'web',
    mode: mode,
    entry: {
       // index.js будет собираться в файл scripts.js, в папке dist

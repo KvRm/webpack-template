@@ -1,0 +1,25 @@
+.header-main
+  .container
+    .logo
+      +svgImage('logo')
+    .catalog
+      button.catalog-button
+        +svgImage('catalog')
+        span Каталог
+    form.search(role='search')
+      input.search-input(type='search' placeholder='Search' aria-label='Search')
+      button.search-button(type='submit')
+        +svgImage('search')
+    .user-menu
+      a.user-menu__link(href="#")
+        .user-menu__item
+          +svgImage('p')
+          span.title Профиль
+      a.user-menu__link(href="#")
+        .user-menu__item
+          +svgImage('i')
+          span.title Избранное
+      a.user-menu__link(href="#")
+        .user-menu__item
+          +svgImage('k')
+          span.title Корзина

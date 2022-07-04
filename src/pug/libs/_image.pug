@@ -1,2 +1,4 @@
 mixin image(name)
-   img(src=require(`../src/images/${name}.png`) alt=name)
+   img(src=require(`../src/layouts/images/${name}.png`) alt=name)
+mixin svgImage(name)
+   img(src=require(`../src/layouts/images/${name}.svg`) alt=name)
